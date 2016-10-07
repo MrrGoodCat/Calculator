@@ -19,8 +19,8 @@
             <Setter Property="HorizontalContentAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
             <Setter Property="FontSize" Value="20" />
-            <Setter Property="Width" Value="60" />
-            <Setter Property="Height" Value="60" />
+            <Setter Property="Width" Value="40" />
+            <Setter Property="Height" Value="40" />
             <Setter Property="Grid.Row" Value="1" />
         </Style>
     </Window.Resources>
@@ -29,7 +29,7 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="50" />
-                <RowDefinition />
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <TextBox Width="222"
                      Height="30"
