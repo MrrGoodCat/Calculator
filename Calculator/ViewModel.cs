@@ -14,21 +14,19 @@ namespace Calculator
     {
 
 
-        public int Result
+        public double Result
         {
-            get { return (int)GetValue(ResultProperty); }
+            get { return (double)GetValue(ResultProperty); }
             set { SetValue(ResultProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for Result.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ResultProperty =
-            DependencyProperty.Register("Result", typeof(int), typeof(ViewModel), new PropertyMetadata(0));
+            DependencyProperty.Register("Result", typeof(double), typeof(ViewModel), new PropertyMetadata(0));
 
 
 
         private ICommand calculate;
-        private int result;
-
         public int FirstNumber { get; set; }
         public int SecondNumber { get; set; }
 
